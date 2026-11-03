@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-cinzel: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-spartan-gold: #D4AF37;
+  --color-spartan-bronze: #A05A2C;
+  --color-spartan-red: #8B0000;
+  --color-spartan-crimson: #B22222;
+  --color-spartan-stone: #1C1917;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0c0a09;
+  color: #f5f5f4;
+  overflow-x: hidden;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+  letter-spacing: 0.05em;
+}
+
+/* Spartan Greek aesthetic borders and textures */
+.spartan-border {
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8), inset 0 0 1px rgba(212, 175, 55, 0.15);
+}
+
+.spartan-border-red {
+  border: 1px solid rgba(178, 34, 34, 0.35);
+  box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
+}
+
+.spartan-gold-gradient {
+  background: linear-gradient(135deg, #F5D77F 0%, #D4AF37 50%, #996515 100%);
+}
+
+.spartan-bronze-gradient {
+  background: linear-gradient(135deg, #C27938 0%, #8C471E 50%, #4D260D 100%);
+}
+
+.spartan-crimson-gradient {
+  background: linear-gradient(135deg, #DC2626 0%, #8B0000 60%, #450A0A 100%);
+}
+
+.spartan-card {
+  background: linear-gradient(180deg, rgba(28, 25, 23, 0.95) 0%, rgba(18, 16, 15, 0.98) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 0.5rem;
+}
+
+.spartan-card-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.spartan-card-hover:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.7), 0 0 15px rgba(212, 175, 55, 0.1);
+}
+
+/* Custom Spartan scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141210;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #38312a;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #574a3e;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "The Empire of IAS — Rise of the Warrior",
+  "description": "Spartan-inspired UPSC CSE battlefield preparation tracking dashboard and empire progression system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
